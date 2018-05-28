@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:title="Ekle"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="ifRoom"
+        android:id="@+id/menu_ekle"></item>
+
+    <item android:title="Liste"
+        android:icon="@mipmap/liste"
+        app:showAsAction="ifRoom"
+        android:id="@+id/menu_liste"></item>
+
+
+    <item android:title="Ayarlar"
+        android:icon="@mipmap/ayarlar"
+        android:id="@+id/menu_ayarlar"
+        app:showAsAction="ifRoom"></item>
+
+
+
+
+
+</menu>

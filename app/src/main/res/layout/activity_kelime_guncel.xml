@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/kelime"
+    tools:context="com.example.onur.whataword.KelimeGuncel">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <EditText
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:id="@+id/txtEn"
+                    android:hint="İngilizce Kelime giriniz"
+                    android:layout_width="match_parent"
+                    android:elevation="10dp"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ınputlayout"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <EditText
+
+                    android:id="@+id/txtTr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:hint="Türkçe Karşılığını giriniz" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <EditText
+                    android:id="@+id/txtCen"
+                    android:hint="İngilizce Cümle  giriniz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+
+                <EditText
+                    android:id="@+id/txtCtr"
+                    android:hint="Türkçe Karşılığını giriniz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/btnEkle"
+                android:textColor="#FFFF"
+                android:elevation="2sp"
+                android:textSize="15dp"
+                android:text="YENİLE"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottommenu"
+        android:background="@color/actionbarrenk"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/beyaz"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>

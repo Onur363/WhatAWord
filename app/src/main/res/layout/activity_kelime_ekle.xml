@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.onur.whataword.KelimeEkle">
+
+    <include
+        layout="@layout/toolbar_layout">
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="300dp">
+                    <EditText
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:id="@+id/txtEn"
+                        android:hint="İngilizce Kelime giriniz"
+                        android:layout_width="300dp"
+                        android:elevation="10dp"
+                        android:layout_height="wrap_content"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/ınputlayout"
+                        android:layout_height="wrap_content"
+                        android:layout_width="310dp">
+
+                        <EditText
+                            android:id="@+id/txtTr"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:focusableInTouchMode="true"
+                            android:hint="Türkçe Karşılığını giriniz"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <ImageButton
+                        android:background="@drawable/gooogle"
+                        android:id="@+id/btnTranslate"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_toRightOf="@+id/ınputlayout"
+                        android:layout_alignBottom="@+id/ınputlayout"/>
+
+
+                </RelativeLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="300dp">
+
+                    <EditText
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:id="@+id/txtCen"
+                        android:hint="İngilizce Cümle  giriniz"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="300dp">
+
+
+                    <EditText
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:id="@+id/txtCtr"
+                        android:hint="Türkçe Karşılığını giriniz"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/btnEkle"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:text="EKLE"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="60dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottommenu"
+            android:background="@color/actionbarrenk"
+            app:itemIconTint="@color/beyaz"
+            app:itemTextColor="@android:color/white"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/main_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.design.widget.BottomNavigationView>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
